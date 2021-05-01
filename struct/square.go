@@ -9,6 +9,15 @@ type Rectangle struct {
 type Circle struct {
 	radis float64
 }
+type Triangle struct {
+	base float64
+	height float64
+}
+
+func (t Triangle) Area() float64 {
+	return t.base * t.height / 2
+}
+
 type Shape interface {
 	Area() float64
 }
